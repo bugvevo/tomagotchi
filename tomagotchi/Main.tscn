@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf5n451y8mt1j"]
+
+[ext_resource type="PackedScene" uid="uid://boer8i0cxkx8l" path="res://Player.tscn" id="1_lqt0o"]
+[ext_resource type="Texture2D" uid="uid://c1iktgmnwl4jr" path="res://art/bg.png" id="2_ytwal"]
+
+[node name="Main" type="Node"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+texture = ExtResource("2_ytwal")
+centered = false
+
+[node name="Player" parent="." instance=ExtResource("1_lqt0o")]
+visibility_layer = 2

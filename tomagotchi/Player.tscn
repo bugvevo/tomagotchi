@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://boer8i0cxkx8l"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_6232t"]
+[ext_resource type="Texture2D" uid="uid://dcedugsqxih72" path="res://art/hand.png" id="1_wasya"]
+[ext_resource type="Texture2D" uid="uid://c6rgjiwh0f0w6" path="res://art/hand2.png" id="2_mymov"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_urtf3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wasya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_mymov")
+}],
+"loop": true,
+"name": &"click",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e52am"]
+radius = 58.1367
+height = 204.477
+
+[node name="Player" type="Area2D"]
+script = ExtResource("1_6232t")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_urtf3")
+animation = &"click"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-50, -115)
+rotation = -0.0628319
+shape = SubResource("CapsuleShape2D_e52am")
