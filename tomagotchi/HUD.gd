@@ -11,7 +11,7 @@ func show_game_over():
 	show_message("goodbyeee~*")
 	await $MessageTimer.timeout
 	
-	$Message.text = "tomagotchi :-)"
+	$Message.text = "tom-agotchi :-)"
 	$Message.show()
 	# Make a one-shot timer and wait for it to finish.
 	await get_tree().create_timer(1.0).timeout

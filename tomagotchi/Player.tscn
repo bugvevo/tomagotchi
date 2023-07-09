@@ -19,8 +19,8 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e52am"]
-radius = 58.1367
-height = 204.477
+radius = 42.0427
+height = 172.54
 
 [node name="Player" type="Area2D"]
 script = ExtResource("1_6232t")
@@ -32,5 +32,5 @@ animation = &"click"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-50, -115)
-rotation = -0.0628319
+rotation = -0.125664
 shape = SubResource("CapsuleShape2D_e52am")
