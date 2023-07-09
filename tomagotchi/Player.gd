@@ -6,7 +6,6 @@ var screenSize
 func _ready():
 	screenSize = get_viewport_rect().size
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	var mousePos = get_viewport().get_mouse_position()
