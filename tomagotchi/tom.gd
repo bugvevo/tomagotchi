@@ -27,9 +27,14 @@ func _on_tom_shift_timer_timeout():
 	position.x = starting_x + x_adjust
 	$TomShiftTimer.start()
 
-
 func _on_tom_stats_update_timer_timeout():
 	change.shuffle()
 	var hunger_change = change[0]
+	change.shuffle()
+	var play_change = change[0]
+	change.shuffle()
+	var poop_change = change[0]
 	hunger = hunger - hunger_change
-	print(hunger)
+	play = play - play_change
+	poop = poop - poop_change
+	print("hunger: ", hunger, " | play: ", play, " | poop: ", poop)

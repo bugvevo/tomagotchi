@@ -31,7 +31,7 @@ frame_progress = 0.394545
 wait_time = 3.0
 
 [node name="TomStatsUpdateTimer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 3.0
 
 [connection signal="timeout" from="TomShiftTimer" to="." method="_on_tom_shift_timer_timeout"]
 [connection signal="timeout" from="TomStatsUpdateTimer" to="." method="_on_tom_stats_update_timer_timeout"]
