@@ -1,6 +1,7 @@
 extends Node
 
 func new_game():
+	$Player.hide()
 	$Player.start($StartPosition.position)
 	$StartTimer.start()
 
